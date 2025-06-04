@@ -1,0 +1,289 @@
+
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Marcos Bandeira da Silva</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-700 antialiased">
+
+    <!-- Header & Navigation -->
+    <header class="bg-slate-50/80 backdrop-blur-lg sticky top-0 z-50">
+        <nav class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0">
+                    <a href="#" class="text-2xl font-extrabold text-slate-800">MBS.</a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#sobre" class="text-slate-600 hover:bg-slate-200 hover:text-slate-900 px-3 py-2 rounded-md text-sm font-medium">Sobre</a>
+                        <a href="#habilidades" class="text-slate-600 hover:bg-slate-200 hover:text-slate-900 px-3 py-2 rounded-md text-sm font-medium">Habilidades</a>
+                        <a href="#projetos" class="text-slate-600 hover:bg-slate-200 hover:text-slate-900 px-3 py-2 rounded-md text-sm font-medium">Projetos</a>
+                        <a href="#experiencia" class="text-slate-600 hover:bg-slate-200 hover:text-slate-900 px-3 py-2 rounded-md text-sm font-medium">Jornada</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-slate-500 hover:text-slate-800 hover:bg-slate-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-slate-100 focus:ring-sky-500">
+                        <span class="sr-only">Abrir menu</span>
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+         <div id="mobile-menu" class="md:hidden hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#sobre" class="text-slate-600 hover:bg-slate-200 hover:text-slate-900 block px-3 py-2 rounded-md text-base font-medium">Sobre</a>
+                <a href="#habilidades" class="text-slate-600 hover:bg-slate-200 hover:text-slate-900 block px-3 py-2 rounded-md text-base font-medium">Habilidades</a>
+                <a href="#projetos" class="text-slate-600 hover:bg-slate-200 hover:text-slate-900 block px-3 py-2 rounded-md text-base font-medium">Projetos</a>
+                <a href="#experiencia" class="text-slate-600 hover:bg-slate-200 hover:text-slate-900 block px-3 py-2 rounded-md text-base font-medium">Jornada</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
+
+        <!-- Hero Section -->
+        <section id="hero" class="text-center mb-24 md:mb-32">
+            <h1 class="text-4xl md:text-6xl font-extrabold text-slate-900 leading-tight">Marcos Bandeira da Silva</h1>
+            <p class="mt-4 text-lg md:text-xl text-sky-600 font-medium">Desenvolvedor Web & Analista de Sistemas em Formação</p>
+            <p class="mt-6 max-w-2xl mx-auto text-slate-600">Apaixonado por criar soluções inovadoras e em transição de uma carreira de gestão para o universo da tecnologia.</p>
+            <div class="mt-8 flex justify-center items-center space-x-4">
+                <a href="https://linkedin.com/in/marcos-bandeira-9a2652212" target="_blank" class="text-slate-500 hover:text-sky-600 transition-colors duration-300">
+                    <svg class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                </a>
+                <a href="https://github.com/zspray" target="_blank" class="text-slate-500 hover:text-sky-600 transition-colors duration-300">
+                    <svg class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.168 6.839 9.492.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.378.203 2.398.1 2.651.64.7 1.03 1.595 1.03 2.688 0 3.848-2.338 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z" clip-rule="evenodd" /></svg>
+                </a>
+                <a href="mailto:marcosbandeira@live.com" class="bg-sky-600 text-white hover:bg-sky-700 font-bold py-3 px-6 rounded-lg transition-transform duration-300 hover:scale-105">Entrar em Contato</a>
+            </div>
+        </section>
+
+        <!-- Sobre -->
+        <section id="sobre" class="mb-24 md:mb-32 scroll-mt-16">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900">Sobre Mim</h2>
+                <p class="mt-2 text-lg text-slate-500">Minha jornada e minhas motivações.</p>
+            </div>
+            <div class="bg-white p-8 md:p-12 rounded-xl shadow-lg ring-1 ring-slate-200">
+                <p class="text-lg text-slate-600 leading-relaxed">
+                    Profissional com sólida experiência em vendas, atendimento ao cliente e gestão de negócios, onde desenvolvi habilidades de comunicação, negociação e foco em resultados. Atualmente, estou em transição de carreira para a área de Tecnologia da Informação, cursando Análise e Desenvolvimento de Sistemas.
+                </p>
+                <p class="mt-4 text-lg text-slate-600 leading-relaxed">
+                    Busco uma oportunidade para aplicar e expandir meus conhecimentos técnicos, combinando minha vivência comercial com a paixão por tecnologia. Sou dedicado ao aprendizado contínuo, com grande interesse em JavaScript e ReactJS, e tenho facilidade para assimilar novas tecnologias e paradigmas.
+                </p>
+            </div>
+        </section>
+        
+        <!-- Habilidades -->
+        <section id="habilidades" class="mb-24 md:mb-32 scroll-mt-16">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900">Habilidades</h2>
+                <p class="mt-2 text-lg text-slate-500">As ferramentas e competências que possuo.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+                <div class="bg-white p-8 rounded-xl shadow-lg ring-1 ring-slate-200">
+                    <h3 class="text-2xl font-bold text-slate-800 mb-6">Técnicas</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <h4 class="font-semibold text-slate-700 mb-2">Linguagens</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-sky-100 text-sky-800 text-sm font-medium px-3 py-1 rounded-full">JavaScript (Intermediário)</span>
+                                <span class="bg-orange-100 text-orange-800 text-sm font-medium px-3 py-1 rounded-full">HTML5 (Avançado)</span>
+                                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">CSS3 (Avançado)</span>
+                                <span class="bg-purple-100 text-purple-800 text-sm font-medium px-3 py-1 rounded-full">C# (Intermediário)</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-slate-700 mb-2">Frameworks/Bibliotecas</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-cyan-100 text-cyan-800 text-sm font-medium px-3 py-1 rounded-full">ReactJS (Iniciante/Estudando)</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-slate-700 mb-2">Ferramentas e Outras</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-slate-200 text-slate-800 text-sm font-medium px-3 py-1 rounded-full">Git</span>
+                                <span class="bg-slate-200 text-slate-800 text-sm font-medium px-3 py-1 rounded-full">GitHub</span>
+                                <span class="bg-slate-200 text-slate-800 text-sm font-medium px-3 py-1 rounded-full">VS Code</span>
+                                <span class="bg-slate-200 text-slate-800 text-sm font-medium px-3 py-1 rounded-full">Windows (Avançado)</span>
+                                <span class="bg-slate-200 text-slate-800 text-sm font-medium px-3 py-1 rounded-full">Lógica de Programação</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg ring-1 ring-slate-200">
+                    <h3 class="text-2xl font-bold text-slate-800 mb-6">Comportamentais</h3>
+                    <div class="flex flex-wrap gap-2">
+                         <span class="bg-green-100 text-green-800 text-sm font-semibold px-3 py-1 rounded-full">Comunicação Eficaz</span>
+                         <span class="bg-green-100 text-green-800 text-sm font-semibold px-3 py-1 rounded-full">Negociação e Persuasão</span>
+                         <span class="bg-green-100 text-green-800 text-sm font-semibold px-3 py-1 rounded-full">Relacionamento Interpessoal</span>
+                         <span class="bg-green-100 text-green-800 text-sm font-semibold px-3 py-1 rounded-full">Foco em Resultados</span>
+                         <span class="bg-green-100 text-green-800 text-sm font-semibold px-3 py-1 rounded-full">Proatividade e Iniciativa</span>
+                         <span class="bg-green-100 text-green-800 text-sm font-semibold px-3 py-1 rounded-full">Rápida Aprendizagem</span>
+                         <span class="bg-green-100 text-green-800 text-sm font-semibold px-3 py-1 rounded-full">Resolução de Problemas</span>
+                         <span class="bg-green-100 text-green-800 text-sm font-semibold px-3 py-1 rounded-full">Trabalho em Equipe</span>
+                         <span class="bg-green-100 text-green-800 text-sm font-semibold px-3 py-1 rounded-full">Organização</span>
+                         <span class="bg-green-100 text-green-800 text-sm font-semibold px-3 py-1 rounded-full">Adaptabilidade</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projetos -->
+        <section id="projetos" class="mb-24 md:mb-32 scroll-mt-16">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900">Projetos</h2>
+                <p class="mt-2 text-lg text-slate-500">Trabalhos que demonstram minhas habilidades.</p>
+            </div>
+            <div class="grid grid-cols-1 gap-8">
+                <!-- Projeto Principal -->
+                <div class="bg-white rounded-xl shadow-lg ring-1 ring-slate-200 overflow-hidden group transform hover:-translate-y-1 transition-transform duration-300">
+                    <div class="md:flex">
+                        <div class="md:flex-shrink-0">
+                            <img class="h-48 w-full object-cover md:h-full md:w-64" src="https://placehold.co/600x400/0ea5e9/ffffff?text=Maps4Study" alt="Interface do Maps4Study">
+                        </div>
+                        <div class="p-8">
+                            <div class="uppercase tracking-wide text-sm text-sky-600 font-semibold">Projeto Destaque</div>
+                            <a href="https://maps4study.com.br" target="_blank" class="block mt-1 text-2xl leading-tight font-bold text-slate-900 hover:text-sky-700">Maps4Study</a>
+                            <p class="mt-2 text-slate-600">Plataforma web para agregação e visualização de mapas mentais, monetizada através de anúncios. Responsável pelo desenvolvimento front-end, design da interface, implementação e postagens.</p>
+                            <div class="mt-4">
+                                <h4 class="font-semibold text-slate-800 mb-2">Tecnologias:</h4>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="bg-orange-100 text-orange-800 text-xs font-medium px-2.5 py-0.5 rounded-full">HTML5</span>
+                                    <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full">CSS3</span>
+                                    <span class="bg-sky-100 text-sky-800 text-xs font-medium px-2.5 py-0.5 rounded-full">JavaScript</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Outros Projetos -->
+                 <div class="bg-white rounded-xl shadow-lg ring-1 ring-slate-200 overflow-hidden group transform hover:-translate-y-1 transition-transform duration-300">
+                    <div class="p-8">
+                        <div class="uppercase tracking-wide text-sm text-sky-600 font-semibold">Portfólio de Estudos</div>
+                        <a href="https://github.com/zspray" target="_blank" class="block mt-1 text-2xl leading-tight font-bold text-slate-900 hover:text-sky-700">Projetos Acadêmicos e de Estudo</a>
+                        <p class="mt-2 text-slate-600">Diversas aplicações e scripts desenvolvidos durante a graduação e cursos complementares para praticar e aprofundar conhecimentos.</p>
+                        <div class="mt-4">
+                            <h4 class="font-semibold text-slate-800 mb-2">Tecnologias:</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-orange-100 text-orange-800 text-xs font-medium px-2.5 py-0.5 rounded-full">HTML5</span>
+                                <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full">CSS3</span>
+                                <span class="bg-sky-100 text-sky-800 text-xs font-medium px-2.5 py-0.5 rounded-full">JavaScript</span>
+                                <span class="bg-purple-100 text-purple-800 text-xs font-medium px-2.5 py-0.5 rounded-full">C#</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Experiencia & Formacao -->
+        <section id="experiencia" class="scroll-mt-16">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900">Minha Jornada</h2>
+                <p class="mt-2 text-lg text-slate-500">Experiência profissional e formação acadêmica.</p>
+            </div>
+            
+            <div class="relative">
+                <!-- Linha do tempo -->
+                <div class="absolute left-1/2 -ml-0.5 w-1 bg-slate-200 h-full"></div>
+
+                <div class="relative space-y-12">
+                    <!-- Item: Cursando ADS -->
+                    <div class="relative">
+                        <div class="md:flex items-center md:justify-end md:space-x-8">
+                            <div class="md:w-1/2"></div>
+                            <div class="md:w-1/2 md:pl-8">
+                                <div class="bg-white p-6 rounded-xl shadow-lg ring-1 ring-slate-200">
+                                    <p class="text-sm text-sky-600 font-semibold">2023 - Presente (Previsão Jan/2026)</p>
+                                    <h3 class="text-xl font-bold text-slate-800 mt-1">Análise e Desenvolvimento de Sistemas</h3>
+                                    <p class="text-slate-600 mt-2">UNINTER</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="absolute left-1/2 -ml-3 h-6 w-6 rounded-full bg-sky-600 border-4 border-slate-50 flex items-center justify-center"></div>
+                    </div>
+
+                    <!-- Item: Experiência Profissional -->
+                    <div class="relative">
+                        <div class="md:flex items-center">
+                            <div class="md:w-1/2 md:pr-8 md:text-right">
+                                <div class="bg-white p-6 rounded-xl shadow-lg ring-1 ring-slate-200">
+                                    <p class="text-sm text-sky-600 font-semibold">2020 - Presente</p>
+                                    <h3 class="text-xl font-bold text-slate-800 mt-1">Sócio-Proprietário e Vendedor</h3>
+                                    <p class="text-slate-600 mt-2">Bandeira Materiais de Construção e Agropecuária</p>
+                                     <p class="text-slate-500 text-sm mt-2 text-left">Responsável pela gestão comercial, administrativa e pela manutenção da infraestrutura de TI da empresa.</p>
+                                </div>
+                            </div>
+                            <div class="md:w-1/2"></div>
+                        </div>
+                        <div class="absolute left-1/2 -ml-3 h-6 w-6 rounded-full bg-sky-600 border-4 border-slate-50 flex items-center justify-center"></div>
+                    </div>
+
+                    <!-- Item: Ensino Médio -->
+                    <div class="relative">
+                        <div class="md:flex items-center md:justify-end md:space-x-8">
+                            <div class="md:w-1/2"></div>
+                            <div class="md:w-1/2 md:pl-8">
+                                <div class="bg-white p-6 rounded-xl shadow-lg ring-1 ring-slate-200">
+                                    <p class="text-sm text-sky-600 font-semibold">Concluído em 2019</p>
+                                    <h3 class="text-xl font-bold text-slate-800 mt-1">Ensino Médio Completo</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="absolute left-1/2 -ml-3 h-6 w-6 rounded-full bg-sky-600 border-4 border-slate-50 flex items-center justify-center"></div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+    
+    <footer class="bg-slate-800 text-slate-300">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center">
+            <p>&copy; 2025 Marcos Bandeira da Silva. Criado com paixão por tecnologia.</p>
+            <p class="text-sm text-slate-400 mt-2">Santa Maria, RS</p>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        document.querySelectorAll('#mobile-menu a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+        
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                if (this.getAttribute('href').length > 1) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
