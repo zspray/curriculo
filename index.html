@@ -511,6 +511,20 @@
         }
 
         function Layout() {
+            const [isVisible, setIsVisible] = React.useState(false);
+
+            React.useEffect(() => {
+                const toggleVisibility = () => {
+                    if (window.pageYOffset > 600) {
+                        setIsVisible(true);
+                    } else {
+                        setIsVisible(false);
+                    }
+                };
+                window.addEventListener('scroll', toggleVisibility);
+                return () => window.removeEventListener('scroll', toggleVisibility);
+            }, []);
+
             return (
                 <div className="relative min-h-screen bg-slate-950 text-slate-100">
                     <div className="pointer-events-none fixed inset-0 -z-10">
@@ -531,6 +545,9 @@
                         <div className="h-px w-full bg-gradient-to-r from-transparent via-slate-700/70 to-transparent" />
                         <ExperienciaFormacao />
                     </main>
+                    <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className={`fixed bottom-4 right-4 bg-sky-500 text-white p-3 rounded-full shadow-lg hover:bg-sky-600 transition-colors z-50 ${isVisible ? '' : 'hidden'}`} aria-label="Voltar ao topo">
+                        ↑
+                    </button>
                     <footer className="relative bg-slate-950/90 border-t border-slate-800">
                         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center text-sm text-slate-400">
                             <p>&copy; {new Date().getFullYear()} Marcos Bandeira da Silva.</p>
